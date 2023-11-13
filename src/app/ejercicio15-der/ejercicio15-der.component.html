@@ -1,0 +1,5 @@
+<app-ejercicio15-izq (enviaNumeros)="recibirArray($event)"></app-ejercicio15-izq> <!-- mostramos el componente izq y usamos la variable EventEmitter para mandar el array de numeros-->
+<h1>Comp Derecho</h1>
+<p *ngFor="let item of numeros"> <!-- recorremos y mostramos el contenido del array numeros del componente derecho-->
+    {{item}}
+</p>

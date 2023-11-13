@@ -1,0 +1,12 @@
+<h1>Padre</h1>
+<ul *ngFor="let item of productos index as i">
+    <li>Producto: {{item}} Precio: {{precios[i]}} Stock {{stock[i]}} </li>
+    <button type="button" (click)="anhadirProductos(i)">
+        <img src="../../assets/carrito.png" width="50">
+        Añadir
+    </button>
+</ul>
+
+<p *ngIf="totalProductosRecibidosDesdeHijo!=0">Total de Productos Añadidos: {{totalProductosRecibidosDesdeHijo}}</p>
+
+<app-ejercicio19-hijo [totalProductosDesdePadre]="totalProductos" [totalPrecioDesdePadre]="totalPrecio"  (envioTotalProductos)="recibirTotalDelHijo($event)"></app-ejercicio19-hijo>

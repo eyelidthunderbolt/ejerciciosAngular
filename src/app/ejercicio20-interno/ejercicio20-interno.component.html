@@ -1,0 +1,7 @@
+<div style="height: 100px; width: 100px;display: flex; flex-direction: column; align-items: center; justify-content: center;" [style.background-color]="colorHijo">
+    <p>Hijo</p>
+    <input type="text" [(ngModel)]="colorHijo" *ngIf="visibilidad">
+    <button (click)="cambiarColorHijo()" *ngIf="visibilidad">Cambiar Color Hijo</button>
+
+</div>
+<!---->

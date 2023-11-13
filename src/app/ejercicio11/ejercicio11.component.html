@@ -1,0 +1,13 @@
+<!-- CON BUTTON
+
+<h1>CON BOTON</h1>
+<input type="text" #mensajeVista>
+<button (click)="mostrarParImpar(mensajeVista.value)">Comparar Pares e Impares</button>
+<pre>{{mensaje}}</pre> -->
+
+<!--SIN BUTTON-->
+
+<h1>SIN BOTON</h1>
+
+<input type="text" #mensajeVista (keyup)="mostrarParImpar(mensajeVista.value)">
+<pre>{{mensaje}}</pre>

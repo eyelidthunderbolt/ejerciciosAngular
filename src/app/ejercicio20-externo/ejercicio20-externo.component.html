@@ -1,0 +1,7 @@
+<div [style.background-color]="colorFondo" style="height: 200px;width: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <input style="display: center-block;" type="text" [(ngModel)]="colorNuevo" *ngIf="visible" placeholder="">
+    <button (click)="cambiarColor()" *ngIf="visible">Cambiar Color</button>
+
+    <app-ejercicio20-interno (colorEnviado)="recibirColor($event)" [colorRecibido]="colorFondo" [visibilidad]="!visible"></app-ejercicio20-interno>
+</div>
+<!---->

@@ -1,0 +1,7 @@
+<app-ejercicio14-izq (envia)="recibirArray($event)"></app-ejercicio14-izq> <!-- esto usa la variable EventEmitter del componente Izq
+en el cual mete el resultado de ejecutar el metodo recibirArray del componente derecho-->
+
+<h1>Componente Derecho</h1>
+<p *ngFor="let item of arrayDerecho"> <!-- recorre el array del componente derecho y muestra el contenido-->
+{{item}}
+</p>

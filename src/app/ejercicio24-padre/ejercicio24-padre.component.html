@@ -1,0 +1,3 @@
+<input #cajaT type="text" [(ngModel)]="colorRecogidoPadre">
+<button (click)="recogerColorPadre(cajaT.value); cambiarVisibilidad()">Comenzar</button>
+<app-ejercicio24-hijo [colorRecogido]="colorEnviado" [visibilidadRecogida]="visibilidad"></app-ejercicio24-hijo>

@@ -1,0 +1,22 @@
+<h1>   <!--Empleados
+    <ul *ngFor="let empleado of trabajadores"  >
+
+
+    {{empleado.nombre}} | {{empleado.cargo}} | 
+
+    <a *ngIf="empleado.marketing == true" >
+        Pertenece a Marketing 
+    </a>
+
+    <ul *ngIf="empleado.marketing == false">
+        No Pertenece a Marketing <br />
+    </ul>
+
+</ul> 
+
+-->
+<button (click)="mostrarValor()">MOSTRAR</button>
+<input type="text" [(ngModel)]="valorSeleccionado"/> <!--Pasamos al valor del string valorSeleccionado del component lo que se escribe en el INPUT-->
+<br><strong>{{valorSeleccionado}}</strong>
+
+</h1>

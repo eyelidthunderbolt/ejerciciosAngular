@@ -1,0 +1,6 @@
+<h1>Comp Izquierdo</h1>
+<input type="text" #valor>
+<button (click)="rellenarArray(valor.value)"> Rellenar Array</button> <!--Llamamos al metodo del componente izquierdo al cual le pasamos el valor recogido en el input -->
+<p *ngFor="let item of cadena"> <!-- recorremos y mostramos el contenido del array del componente izquierdo-->
+    {{item}}
+</p>

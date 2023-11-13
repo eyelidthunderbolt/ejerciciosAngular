@@ -1,0 +1,18 @@
+<app-ejercicio16izq (encontrados)="anhadirEncontrados($event)" (noEncontrados)="anhadirNoEncontrados($event)"></app-ejercicio16izq>
+<h1>Componente Derecho</h1>
+<div style="background-color: green; width: 200px; height: 200px;">
+
+    <li *ngFor="let item of arrayEncontrados">
+        {{item}}
+
+
+    </li>
+</div>
+
+<div style="background-color: red; width: 200px; height: 200px;">
+    <li *ngFor="let item of arrayNoEncontrados">
+        {{item}}
+
+
+    </li>
+</div>

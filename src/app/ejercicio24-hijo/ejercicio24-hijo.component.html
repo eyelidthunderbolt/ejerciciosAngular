@@ -1,0 +1,8 @@
+<div  [ngStyle]="{'background-color': colorRecogido}" style="width: 460px; height: 840px">
+
+</div>
+<div *ngIf="visibilidadRecogida">
+
+    <input #cajaTHijo type="text"  [(ngModel)]="colorRecogidoHijo">
+    <button (click)="cambiarColorHijo(cajaTHijo.value)">Cambiar</button>
+</div>

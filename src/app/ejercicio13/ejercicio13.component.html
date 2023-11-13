@@ -1,0 +1,6 @@
+<input type="text" #colorNuevo>
+<button (click)="cambiarColor(colorNuevo.value)">Cambiar Color</button>
+<div [style.width.px]="tamanoCuadrado" [style.height.px]="tamanoCuadrado"  [style.background-color]="colorFondo">
+    
+    {{mensaje}}
+    </div>
