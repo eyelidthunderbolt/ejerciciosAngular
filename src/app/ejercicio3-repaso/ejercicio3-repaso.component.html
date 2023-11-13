@@ -1,0 +1,11 @@
+<!--<button (click)="mostrarPersona()">Mostrar Valores</button> -->
+<ul>
+    <li>{{persona.nombre}}</li>
+    <li>{{persona.edad}}</li>
+    <li>{{persona.localidad}}</li>
+
+</ul>
+
+<div *ngFor="let item of persona | keyvalue">
+    Key: {{item.key}}, Value: {{item.value}}
+  </div>

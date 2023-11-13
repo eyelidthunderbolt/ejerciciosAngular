@@ -47,6 +47,7 @@ import { Ejercicio26PadreComponent } from './ejercicio26-padre/ejercicio26-padre
 import { Ejercicio26HijoComponent } from './ejercicio26-hijo/ejercicio26-hijo.component';
 import { Ejercicio27PadreComponent } from './ejercicio27-padre/ejercicio27-padre.component';
 import { Ejercicio27HijoComponent } from './ejercicio27-hijo/ejercicio27-hijo.component';
+import { Ejercicio3RepasoComponent } from './ejercicio3-repaso/ejercicio3-repaso.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { Ejercicio27HijoComponent } from './ejercicio27-hijo/ejercicio27-hijo.co
     Ejercicio26PadreComponent,
     Ejercicio26HijoComponent,
     Ejercicio27PadreComponent,
-    Ejercicio27HijoComponent
+    Ejercicio27HijoComponent,
+    Ejercicio3RepasoComponent
   ],
   imports: [
     BrowserModule,
