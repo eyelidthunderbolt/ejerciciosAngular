@@ -31,7 +31,7 @@ export class Ejercicio4RepasoComponent implements OnInit {
 
   compararPropiedades(){
 
-    if(JSON.stringify(this.persona.nombre) === JSON.stringify(this.persona.edad)){
+    if(this.persona.nombre == this.persona.edad.toString()){
 
       this.mensaje = "Son Iguales"
     }
