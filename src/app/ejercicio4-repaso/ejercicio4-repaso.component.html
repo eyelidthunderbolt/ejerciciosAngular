@@ -1,0 +1,10 @@
+
+
+<p *ngFor="let item of persona | keyvalue">
+    Propiedad: {{item.key}}, Valor: {{item.value}}
+
+
+</p>
+<button (click)="compararPropiedades()">Comparar Propiedades</button>
+<p>Valor {{this.persona.edad}} y Valor {{this.persona.nombre}}</p>
+{{mensaje}}
