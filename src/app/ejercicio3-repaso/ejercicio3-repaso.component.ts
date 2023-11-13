@@ -24,19 +24,4 @@ export class Ejercicio3RepasoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /*mostrarPersona(){
-
-    for(let propiedad in this.persona){
-
-      this.valoresPersona = this.valoresPersona + " " + this.persona[propiedad];
-
-
-    }
-  }*/
-
-  obtenerPersona(){
-
-    return Object.keys(this.persona);
-  }
-
 }
