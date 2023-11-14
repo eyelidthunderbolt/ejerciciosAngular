@@ -1,0 +1,9 @@
+
+<p> <ng-container *ngIf="this.persona.edad.toString()==this.persona.nombre; else elseTemplate">
+   El valor {{persona.nombre}} y el valor {{persona.edad}} Son iguales
+</ng-container>
+<ng-template #elseTemplate>
+    El valor {{persona.nombre}} y el valor {{persona.edad}} No son Iguales
+</ng-template>
+</p>
+
