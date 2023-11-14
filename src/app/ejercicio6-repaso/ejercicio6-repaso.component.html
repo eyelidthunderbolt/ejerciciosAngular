@@ -1,0 +1,7 @@
+<p><ng-container *ngIf="persona.nombre == alumno.nombre; else elseTemplate">
+    El valor {{persona.nombre}} y el valor {{alumno.nombre}} son iguales
+</ng-container>
+<ng-template #elseTemplate>
+    El valor {{persona.nombre}} y el valor {{alumno.nombre}} no son iguales
+</ng-template>
+</p>
